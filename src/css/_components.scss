@@ -1,0 +1,50 @@
+// Bootstrap tabs
+ 
+.nav-tabs {
+	border: none;
+
+	.nav-link {
+		border: none;
+		border-bottom: 2px solid $color_light;
+		font-size: 12px;
+		text-transform: uppercase;
+		padding: 5px;
+		color: $color-light;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+
+		&.active {
+			border-bottom: 2px solid $color_green;
+			color: $color_main;
+		}
+	}
+}
+
+
+// Slider
+
+.slick-dots {
+	margin-top: 15px;
+	list-style: none;
+	padding-left: 0;
+
+	li {
+		display: inline-block;
+		width: 16px;
+		height: 5px;
+		background-color: $color_main;
+		margin-right: 5px;
+		border: 1px solid $color_main;
+	}
+
+	li.slick-active {
+		width: 30px;
+		background-color: $color_green;
+		border: 1px solid $color_green
+		}
+
+	button {
+		display: none;
+	}
+
+}
